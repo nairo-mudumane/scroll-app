@@ -6,8 +6,9 @@ export default function Post() {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <ScrollView showsVerticalScrollIndicator={false}>
+        <ScrollView showsVerticalScrollIndicator={false} onScroll={console.log}>
           <Text style={styles.title}>Lorem ipsum</Text>
+
           <View>
             <Text style={styles.text}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
@@ -50,9 +51,7 @@ export default function Post() {
               consequuntur, dolor nulla, asperiores beatae doloremque officiis
               molestias hic, sunt nesciunt sint nemo cumque?
             </Text>
-          </View>
 
-          <View>
             <Text style={styles.text}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
               necessitatibus tempora maiores nesciunt adipisci atque ducimus eum
